@@ -191,4 +191,4 @@ print(areas) # they point to the same list! (In R it's different)
 # After your edit, changes made to areas_copy shouldn't affect areas
 
 
-
+print(areas_1)

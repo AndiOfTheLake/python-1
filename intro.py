@@ -142,4 +142,53 @@ areas[-1] = 10.50
 # Change "living room" to "chill zone"
 areas[4] = "chill zone"
 
+# Create the areas list and make some changes
+areas = ["hallway", 11.25, "kitchen", 18.0, "chill zone", 20.0,
+         "bedroom", 10.75, "bathroom", 10.50]
+
+# Add poolhouse data to areas, new list is areas_1
+areas_1 = areas + ["poolhouse", 24.5]
+
+# Add garage data to areas_1, new list is areas_2
+areas_2 = areas_1 + ["garage", 15.45]
+
+# Delete list elements
+x = ["a", "b", "c", "d"]
+del(x[1])
+
+
+areas = ["hallway", 11.25, "kitchen", 18.0,
+        "chill zone", 20.0, "bedroom", 10.75,
+         "bathroom", 10.50, "poolhouse", 24.5,
+         "garage", 15.45]
+        
+# We want to delete "poolhouse" and "24.5", which of the 
+# following lines does the job?
+
+del(areas[10]); del(areas[11])
+
+del(areas[10:11])
+
+del(areas[-4:-2])
+
+del(areas[-3]); del(areas[-4])
+
+## Inner working of lists
+# Create list areas
+areas = [11.25, 18.0, 20.0, 10.75, 9.50]
+
+# Create areas_copy
+areas_copy = areas
+
+# Change areas_copy
+areas_copy[0] = 5.0
+
+# Print areas
+print(areas) # they point to the same list! (In R it's different)
+
+# Change the second command, that creates the variable areas_copy, 
+# such that areas_copy is an explicit copy of areas. 
+# After your edit, changes made to areas_copy shouldn't affect areas
+
+
 

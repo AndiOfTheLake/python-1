@@ -190,5 +190,30 @@ print(areas) # they point to the same list! (In R it's different)
 # such that areas_copy is an explicit copy of areas. 
 # After your edit, changes made to areas_copy shouldn't affect areas
 
+## FUNCTIONS
+max(areas)
+round(1.68, 2)
 
+# documentation
+help(round) 
+
+# documentation(NO space btw question mark and funciton name)
+?round 
+
+# In the documentation we see that there are square brackets around
+# ndigits, meaning that this is an optional argument
+
+# Familiar functions
+# Create variables var1 and var2
+var1 = [1, 2, 3, 4]
+var2 = True
+
+# Print out type of var1
+print(type(var1))
+
+# Print out length of var1
+print(len(var1))
+
+# Convert var2 to an integer: out2
+out2 = int(var2)
 

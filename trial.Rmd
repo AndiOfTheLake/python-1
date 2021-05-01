@@ -12,7 +12,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 
 ```{r, include=FALSE, cache=FALSE}
-knitr::read_chunk('test.R') # read external R script
+knitr::read_chunk('test.R') # read external R script, cache must be false
 ```
 
 ```{r, a}

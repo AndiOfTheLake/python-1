@@ -298,6 +298,137 @@ A = math.pi*r**2
 print("Circumference: " + str(C))
 print("Area: " + str(A))
 
+# Definition of radius
+r = 192500
+
+# Import radians function of math package
+from math import radians
+
+# Travel distance of Moon over 12 degrees. Store in dist.
+dist = r * radians(12)
+
+# Print out dist
+print(dist)
+
+# different ways of importing
+# Suppose you want to use the function inv()
+# which is in the linalg subpackage of the scipy package. 
+# You want to be able to use this function as follows:
+
+# my_inv([[1,2], [3,4]])
+# We need the following import statement
+from scipy.linalg import inv as my_inv
+my_inv([[1,2], [3,4]])
+
+## Your First NumPy Array
+
+# Create list baseball
+baseball = [180, 215, 210, 210, 188, 176, 209, 200]
+
+# Import the numpy package as np
+import numpy as np
+
+# Create a numpy array from baseball: np_baseball
+np_baseball = np.array(baseball)
+
+# Print out type of np_baseball
+print(type(np_baseball))
+
+# height is available as a regular list
+height_in = [74, 74, 72, 75, 75, 73]
+
+# Import numpy
+import numpy as np
+
+# Create a numpy array from height_in: np_height_in
+np_height_in = np.array(height_in)
+
+# Print out np_height_in
+print(np_height_in)
+
+# Convert np_height_in to m: np_height_m
+np_height_m = np_height_in * 0.0254
+
+# Print np_height_m
+print(np_height_m)
+
+# subsetting of arrays
+x = [4 , 9 , 6, 3, 1]
+x[1]
+import numpy as np
+y = np.array(x)
+y[1]
+
+high = y > 5
+y[high]
+print(y[high])
+
+## Side effects of Numpy
+np.array([True, 1, 2]) + np.array([3, 4, False])
+
+
+## 2D numpy arrays
+# Your first 2D Numpy Array
+# Create baseball, a list of lists
+baseball = [[180, 78.4],
+            [215, 102.7],
+            [210, 98.5],
+            [188, 75.2]]
+
+# Import numpy
+import numpy as np
+
+# Create a 2D numpy array from baseball: np_baseball
+np_baseball = np.array(baseball)
+
+# Print out the type of np_baseball
+print(type(np_baseball))
+
+# Print out the shape of np_baseball
+# Notice that np_baseball.shape is not a method,
+# as there would be round brackets around shape
+print(np_baseball.shape)
+
+## Subsetting 2D NumPy Arrays
+# regular list of lists
+x = [["a", "b"], ["c", "d"]]
+[x[0][0], x[1][0]]
+
+# numpy
+import numpy as np
+np_x = np.array(x)
+np_x[:,0]
+
+
+## 2D Arithmetic
+import numpy as np
+np_mat = np.array([[1, 2],
+                   [3, 4],
+                   [5, 6]])
+np_mat * 2
+np_mat + np.array([10, 10])
+np_mat + np_mat
+
+## Average versus median
+import numpy as np
+x = [1, 4, 8, 10, 12]
+np.mean(x)
+np.median(x)
+
+
+## load data set
+import pandas as pd
+
+mlb= "https://assets.datacamp.com/production/repositories/288/datasets/e5d60ff535f86d27609312f9e41c35a1d737ddc0/baseball.csv"
+fifa="https://assets.datacamp.com/production/repositories/288/datasets/026a5211b906ac118a09b1a0dbf7df48faafb379/fifa.csv"
+
+mlb = np.array(pd.read_csv (mlb))
+
+fifa = np.arrary(pd.read_csv (fifa))
+
+height_in = mlb[:,3]
+
+
 ## Download Jupyter Notebook
 # https://www.youtube.com/watch?v=otmWEEFysms
 # go to C/Users/user/AppData/local/programs/python/scripts
@@ -307,3 +438,4 @@ print("Area: " + str(A))
 
 ## create PAT on github
 # https://www.youtube.com/watch?v=kHkQnuYzwoo
+# Also check out happy git with r for "gitcreds" package

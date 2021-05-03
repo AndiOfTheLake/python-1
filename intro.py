@@ -197,8 +197,9 @@ round(1.68, 2)
 # documentation
 help(round) 
 
-# documentation(NO space btw question mark and funciton name)
-?round 
+# documentation(NO space btw question mark and funciton name) (this is 
+# often invalid
+# syntax: ?round
 
 # In the documentation we see that there are square brackets around
 # ndigits, meaning that this is an optional argument
@@ -279,6 +280,30 @@ print(areas)
 # Install packages
 # In the terminal, type pip3 install package.name
 # update pip: python -m pip install --upgrade pip
+import math
+
+# Definition of radius
+r = 0.43
+
+# Import the math package
+import math
+
+# Calculate C
+C = 2 * math.pi * r
+
+# Calculate A
+A = math.pi*r**2
+
+# Build printout
+print("Circumference: " + str(C))
+print("Area: " + str(A))
+
+## Download Jupyter Notebook
+# https://www.youtube.com/watch?v=otmWEEFysms
+# go to C/Users/user/AppData/local/programs/python/scripts
+# Open a windows terminal and type: pip install jupyter
+# go to a folder. open a windows terminal and type: jupyter notebook
 
 
-
+## create PAT on github
+# https://www.youtube.com/watch?v=kHkQnuYzwoo

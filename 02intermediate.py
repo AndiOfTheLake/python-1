@@ -59,3 +59,27 @@ import pandas as pd
 # Create dictionary my_dict with three key:value pairs: my_dict
 my_dict = {'country':'names', 'drives_right':'dr','cars_per_cap':'cpc'}
 print(my_dict)
+
+# While loop
+# Initialize offset
+offset = 8
+
+# Code the while loop
+while offset != 0 :
+    offset = offset - 1
+    print(offset)  
+
+
+np_height = np.array([75]* 10)
+np_weight = np.array([200]*10)
+
+import random as rd
+rd.seed(500)
+e1 = np.random.normal(loc=0.0, scale=1.0, size=len(np_height))
+e2 = np.random.normal(loc=200, scale=5.0, size=len(np_height))
+
+np_height = np_height + e1
+np_weight = np_weight + e2
+
+np_baseball = np.column_stack((np_height, np_weight))
+np_baseball.shape

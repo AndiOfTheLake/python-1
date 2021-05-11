@@ -83,3 +83,6 @@ np_weight = np_weight + e2
 
 np_baseball = np.column_stack((np_height, np_weight))
 np_baseball.shape
+
+
+help(sort_values())

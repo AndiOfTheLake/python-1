@@ -34,3 +34,5 @@ print(temp_by_country_city_vs_year)
 avocados = pd.read_pickle('avoplotto.pkl')
 avocados_2016 = avocados[avocados['year'] == '2016']
 avocados_2016.shape
+
+avocados['year'].info()
